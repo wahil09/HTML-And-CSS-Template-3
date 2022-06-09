@@ -1,0 +1,99 @@
+
+
+@media screen and (max-width: 1200px) {
+    /* ----- Header ----- */
+
+    .container header .container-header {
+        width: 970px;
+    }
+
+    .container header .container-header menu .main-ul .link .other-links .cadre-img {
+        width: 40%;
+    }
+
+    .container header .container-header menu .main-ul .link .other-links .second-ul {
+        width: 55%;
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    /* ----- Header ----- */
+
+    .container header .container-header {
+        width: 750px;
+    }
+
+    .container header .container-header menu .main-ul .link .other-links .cadre-img {
+        display: none;
+    }
+
+    .container header .container-header menu .main-ul .link .other-links .second-ul {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+    /* ----- Header ----- */
+    .container header {
+        height: 90px;
+    }
+
+    .container header .container-header {
+        width: 100%;
+        flex-direction: column;
+        line-height: 2.5;
+
+    }
+
+    .container header .container-header .cadre-title  {
+        height: 55%;
+    }
+
+    .container header .container-header menu {
+        height: 45%;
+        width: 300px;
+    }
+
+    .container header .container-header menu .main-ul .link a {
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 15px;
+    }
+    /* ----- Header ----- */
+    .container header {
+        height: 90px;
+    }
+
+    .container header .container-header {
+        width: 100%;
+        flex-direction: column;
+        line-height: 2.5;
+
+    }
+
+    .container header .container-header .cadre-title  {
+        height: 55%;
+    }
+
+    .container header .container-header menu {
+        height: 45%;
+        width: 300px;
+    }
+
+    .container header .container-header menu .main-ul .link a {
+        font-size: 14px;
+    }
+}

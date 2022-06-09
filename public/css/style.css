@@ -160,12 +160,12 @@ li {
 
 .container header .container-header menu .main-ul .link .other-links .second-ul li {
     width: 47%;
+    border-bottom: 1px solid var(--section-background);
 }
 
 .container header .container-header menu .main-ul .link .other-links .second-ul li a {
     display: block;
     padding: 15px;
-    border-bottom: 1px solid var(--section-background);
     color: var(--main-color);
     font-weight: bold;
     text-transform: capitalize;

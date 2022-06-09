@@ -49,7 +49,6 @@
         width: 100%;
         flex-direction: column;
         line-height: 2.5;
-
     }
 
     .container header .container-header .cadre-title  {
@@ -63,6 +62,19 @@
 
     .container header .container-header menu .main-ul .link a {
         font-size: 14px;
+    }
+
+    .container header .container-header menu .main-ul .link .other-links {
+        padding: 5px;
+        top: 90px;
+    }
+
+    .container header .container-header menu .main-ul .link .other-links .second-ul li {
+        width: 100%;
+    }
+
+    .container header .container-header menu .main-ul .link .other-links .second-ul li a {
+        padding: 5px;
     }
 }
 

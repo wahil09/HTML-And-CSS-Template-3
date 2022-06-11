@@ -3,8 +3,8 @@
 @media screen and (max-width: 1200px) {
     /* ----- Header ----- */
 
-    .container header .container-header {
-        width: 970px;
+    .container header .container-header, .container-landing {
+        width: 970px !important;
     }
 
     .container header .container-header menu .main-ul .link .other-links .cadre-img {
@@ -14,6 +14,13 @@
     .container header .container-header menu .main-ul .link .other-links .second-ul {
         width: 55%;
     }
+
+
+    /* ---------- Landing ----------- */
+    .container main .landing .container-landing .text {
+        width: 340px;
+    }
+    
 }
 
 
@@ -21,8 +28,8 @@
 @media screen and (max-width: 992px) {
     /* ----- Header ----- */
 
-    .container header .container-header {
-        width: 750px;
+    .container header .container-header, .container-landing {
+        width: 750px !important;
     }
 
     .container header .container-header menu .main-ul .link .other-links .cadre-img {
@@ -32,11 +39,49 @@
     .container header .container-header menu .main-ul .link .other-links .second-ul {
         width: 100%;
     }
+
+    /* ---------- Landing ----------- */
+    .container main .landing .container-landing .text {
+        width: 340px;
+    }
+
+    .container main .landing .container-landing {
+        justify-content: space-evenly;
+    }
+
+    .container main .landing .container-landing .text {
+        width: 500px;
+        text-align: center;
+    }
+
+    .container main .landing .container-landing .text h1 {
+        margin-bottom: 10px;
+    }
+
+    .container main .landing .container-landing .cadre-img {
+        display: none;
+    }
+    .container main .landing .container-landing .text h1 {
+        text-transform: capitalize;
+        letter-spacing: -2px;
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    
+    .container main .landing .container-landing .text p {
+        font-size: 23px;
+        line-height: 1.7;
+        color: #666;
+    }
 }
 
 
 
 @media screen and (max-width: 768px) {
+    .container-landing {
+        width: 100%;
+    }
+
     body {
         font-size: 15px;
     }
@@ -46,7 +91,7 @@
     }
 
     .container header .container-header {
-        width: 100%;
+        width: 100% !important;
         flex-direction: column;
         line-height: 2.5;
     }
@@ -65,7 +110,11 @@
     }
 
     .container header .container-header menu .main-ul .link .other-links {
+        top: 150px;
         padding: 5px;
+    }
+
+    .container header .container-header menu .main-ul .link:hover .other-links {
         top: 90px;
     }
 
@@ -75,6 +124,27 @@
 
     .container header .container-header menu .main-ul .link .other-links .second-ul li a {
         padding: 5px;
+    }
+
+
+    /* ---------- Landing ----------- */
+    .container main .landing .container-landing .text {
+        width: 340px;
+    }
+
+    .container main .landing .container-landing .text {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .container main .landing .container-landing .text h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+    
+    .container main .landing .container-landing .text p {
+        font-size: 18px;
+
     }
 }
 

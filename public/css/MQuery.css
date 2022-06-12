@@ -3,7 +3,7 @@
 @media screen and (max-width: 1200px) {
     /* ----- Header ----- */
 
-    .container header .container-header, .container-landing {
+    .container header .container-header, .container-landing, .container-articles {
         width: 970px !important;
     }
 
@@ -20,6 +20,11 @@
     .container main .landing .container-landing .text {
         width: 340px;
     }
+
+    /* ---------- Articles ----------- */
+    .container .articles .container-articles .content .article {
+        width: 287px;
+    }
     
 }
 
@@ -28,7 +33,7 @@
 @media screen and (max-width: 992px) {
     /* ----- Header ----- */
 
-    .container header .container-header, .container-landing {
+    .container header .container-header, .container-landing, .container-articles {
         width: 750px !important;
     }
 
@@ -73,12 +78,18 @@
         line-height: 1.7;
         color: #666;
     }
+
+
+    /* ---------- Articles ----------- */
+    .container .articles .container-articles .content .article {
+        width: 340px;
+    }
 }
 
 
 
 @media screen and (max-width: 768px) {
-    .container-landing {
+    .container-landing, .container-articles {
         width: 100%;
     }
 
@@ -144,11 +155,24 @@
     
     .container main .landing .container-landing .text p {
         font-size: 18px;
+    }
 
+
+    /* ---------- Articles ----------- */
+    .container .articles .container-articles .content .article {
+        width: 47%;
     }
 }
 
 
+@media screen and (max-width:606px) {
+    
+
+    /* ---------- Articles ----------- */
+    .container .articles .container-articles .content .article {
+        width: 100%;
+    }
+}
 
 @media screen and (max-width: 360px) {
     body {

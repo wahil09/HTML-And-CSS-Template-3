@@ -10,6 +10,7 @@
 
 .main-heading {
     width: 100%;
+    z-index: 1;
 }
 
 @keyframes ball-left {
@@ -525,6 +526,90 @@ li {
         -moz-transform: translateX(8px);
         -ms-transform: translateX(8px);
         -o-transform: translateX(8px);
+    }
 }
 
+
+/* ----------------- Gallery ----------------- */
+.container .gallery {
+    width: 100%;
+    position: relative;
+    background-color: var(--section-background);
+}
+
+.container .gallery::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-image: linear-gradient(135deg, rgb(255, 255, 255) 25%, transparent 25%), linear-gradient(225deg, rgb(255, 255, 255) 25%, transparent 25%);
+    background-size: 30px;
+}
+
+.container .gallery .container-gallery {
+    width: 1170px;
+    padding: 100px 0;
+    row-gap: 80px;
+}
+
+.container .gallery .container-gallery .content {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 15px;
+    row-gap: 40px;
+}
+
+.container .gallery .container-gallery .content .box {
+    width: 353px;
+    border: 15px solid white;
+    box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 / 12%);
+    overflow: hidden;
+    position: relative;
+}
+
+.container .gallery .container-gallery .content .box img {
+    width: 100%;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.container .gallery .container-gallery .content .box::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: rgb(255 255 255 / 20%);
+    z-index: 2;
+    opacity: 0;
+}
+
+.container .gallery .container-gallery .content .box:hover::before {
+    animation: 0.7s bg-ground;
+    -webkit-animation: 0.7s bg-ground;
+}
+
+@keyframes bg-ground {
+    0%, 40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 200%;
+        height: 200%;
+    }
+}
+.container .gallery .container-gallery .content .box:hover img {
+    transform: rotate(5deg) scale(1.1);
 }

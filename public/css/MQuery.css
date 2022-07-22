@@ -3,7 +3,7 @@
 @media screen and (max-width: 1200px) {
     /* ----- Header ----- */
 
-    .container header .container-header, .container-landing, .container-articles, .container-gallery {
+    .container header .container-header, .container-landing, .container-articles, .container-gallery, .container-features {
         width: 970px !important;
     }
 
@@ -30,6 +30,11 @@
     .container .gallery .container-gallery .content .box {
         width: 340px;
     }
+
+    /* ------------ Features ------------ */
+    .container .features .container-features .content .feature {
+        width: 47.5%
+    }
     
 }
 
@@ -38,7 +43,7 @@
 @media screen and (max-width: 992px) {
     /* ----- Header ----- */
 
-    .container header .container-header, .container-landing, .container-articles, .container-gallery {
+    .container header .container-header, .container-landing, .container-articles, .container-gallery, .container-features {
         width: 750px !important;
     }
 
@@ -95,7 +100,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .container-landing, .container-articles, .container-gallery {
+    .container-landing, .container-articles, .container-gallery, .container-features {
         width: 100%;
     }
 
@@ -188,6 +193,12 @@
 
     /* ------------ Gallery ------------- */
     .container .gallery .container-gallery .content .box {
+        width: 100%;
+    }
+
+
+    /* ------------ Features ------------ */
+    .container .features .container-features .content .feature {
         width: 100%;
     }
 }

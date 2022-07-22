@@ -3,7 +3,7 @@
 @media screen and (max-width: 1200px) {
     /* ----- Header ----- */
 
-    .container header .container-header, .container-landing, .container-articles, .container-gallery, .container-features {
+    .container header .container-header, .container-landing, .container-articles, .container-gallery, .container-features, .container-testimonials {
         width: 970px !important;
     }
 
@@ -35,6 +35,11 @@
     .container .features .container-features .content .feature {
         width: 47.5%
     }
+
+    /* ------------ Testimonials ------------ */
+    .container .testimonials .container-testimonials .content .box {
+        width: 47.5%
+    }
     
 }
 
@@ -43,7 +48,7 @@
 @media screen and (max-width: 992px) {
     /* ----- Header ----- */
 
-    .container header .container-header, .container-landing, .container-articles, .container-gallery, .container-features {
+    .container header .container-header, .container-landing, .container-articles, .container-gallery, .container-features, .container-testimonials {
         width: 750px !important;
     }
 
@@ -100,7 +105,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .container-landing, .container-articles, .container-gallery, .container-features {
+    .container-landing, .container-articles, .container-gallery, .container-features, .container-testimonials {
         width: 100%;
     }
 
@@ -182,7 +187,7 @@
 }
 
 
-@media screen and (max-width:606px) {
+@media screen and (max-width:686px) {
     
 
     /* ---------- Articles ----------- */
@@ -199,6 +204,12 @@
 
     /* ------------ Features ------------ */
     .container .features .container-features .content .feature {
+        width: 100%;
+    }
+
+
+    /* ------------ Testimonials ------------ */
+    .container .testimonials .container-testimonials .content .box {
         width: 100%;
     }
 }
